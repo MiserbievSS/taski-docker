@@ -20,9 +20,8 @@ jobs:
       # их можно использовать в своих workflow.
       # Применим готовое описание шага для получения исходного кода
       - name: Check out repository code  # Имя шага задаём сами
-        uses: actions/checkout@v3  # Берём готовое решение из библиотеки 
-GitHub Actions
-      # Выполняем команду tree в текущей директории
+        uses: actions/checkout@v3
+
       - name: Print project tree
         run: tree .
 
